@@ -6,6 +6,7 @@ const tweetBank = require('../tweetBank');
 router.get('/', function (req, res) {
   let tweets = tweetBank.list();
   res.render( 'index', { tweets: tweets } );
+  console.log(tweets);
 });
 
 module.exports = router;
