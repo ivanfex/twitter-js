@@ -18,7 +18,8 @@
       {% for tweet in tweets %}
         <div class='tweetbox'>
           <img/>
-          <h3>{{tweet.name}}</h3>
+          <h3><a href="/users/{{tweet.name}}">{{tweet.name}}</a></h3>
+          <li>{{tweet.id}}</li>
           <li>{{tweet.content}}</li>
         </div>
       {% endfor %}

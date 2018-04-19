@@ -9,4 +9,17 @@ router.get('/', function (req, res) {
   console.log(tweets);
 });
 
+router.get('/users/:name', (req, res) => {
+  let target = tweetBank.find({'name': req.params.name});
+  res.render('index', {tweets: target});
+
+})
+
+// router.get('/users/:name', (req, res) => {
+//   let target = tweetBank.find({'name': req.params.name});
+//   res.render('index', {tweets: target});
+//
+// })
+
+
 module.exports = router;

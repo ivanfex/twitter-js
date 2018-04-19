@@ -17,9 +17,4 @@ nunjucks.configure('views', {noCache: true, autoescape: true, express: app})
 app.use(express.static('public'));
 
 app.use(volleyball)
-
-
-
-
-
 app.listen(3000, () => console.log('Hello World!'));
