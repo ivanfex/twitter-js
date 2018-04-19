@@ -1,0 +1,14 @@
+{
+  "name": "twitter-js",
+  "version": "1.0.0",
+  "description": "Twitter clone made with express and local database",
+  "main": "index.js",
+  "scripts": {
+    "test": "run test"
+  },
+  "author": "Ivan and Richard",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
